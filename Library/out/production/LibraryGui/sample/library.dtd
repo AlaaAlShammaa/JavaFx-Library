@@ -1,0 +1,15 @@
+<!DOCTYPE library [
+<!ELEMENT library (author | book)* >
+<!ELEMENT book (title, year?, publisher?)>
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT year (#PCDATA) >
+<!ELEMENT publisher (#PCDATA) >
+<!ELEMENT author (firstName, middleName?, lastName, nationality?)>
+<!ELEMENT firstName (#PCDATA) >
+<!ELEMENT lastName (#PCDATA) >
+<!ELEMENT middleName (#PCDATA) >
+<!ELEMENT nationality (#PCDATA) >
+<!ATTLIST book ISBN ID #REQUIRED>
+<!ATTLIST author id ID #REQUIRED>
+<!ATTLIST book authors IDREFS #REQUIRED>
+]>

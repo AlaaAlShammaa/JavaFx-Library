@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+
+<?import javafx.geometry.Insets?>
+<?import org.controlsfx.control.CheckComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0"
+      prefWidth="602.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" spacing="10"
+      fx:controller="sample.addEditAuthorsController">
+    <children>
+        <ScrollPane fitToWidth="true" fitToHeight="true">
+            <content>
+                <TableView fx:id="authorsTable" prefHeight="293.0" prefWidth="600.0">
+                    <columns>
+                        <TableColumn fx:id="idCol" prefWidth="75.0" text="ID"/>
+                        <TableColumn fx:id="fNameCol" prefWidth="123.0" text="FIRST NAME"/>
+                        <TableColumn fx:id="mNameCol" prefWidth="123.0" text="MIDDLE NAME"/>
+                        <TableColumn fx:id="lNameCol" prefWidth="123.0" text="LAST NAME"/>
+                        <TableColumn fx:id="nationalityCol" prefWidth="106.0" text="NATIONALITY"/>
+                    </columns>
+                </TableView>
+
+            </content>
+
+        </ScrollPane>
+        <HBox prefHeight="109.0" prefWidth="600.0">
+            <children>
+                <VBox prefHeight="108.0" prefWidth="424.0">
+                    <children>
+                        <GridPane vgap="20" hgap="50">
+                            <padding>
+                                <Insets top="5" right="5" bottom="5" left="5"/>
+                            </padding>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                            </rowConstraints>
+                            <children>
+                                <Label text="ID:"/>
+                                <Label text="Fist Name:" GridPane.rowIndex="1"/>
+                                <Label text="Middle Name:" GridPane.rowIndex="2"/>
+                                <Label text="Last Name:" GridPane.rowIndex="3"/>
+                                <Label text="Nationality:" GridPane.rowIndex="4"/>
+                                <TextField fx:id="idTF" GridPane.columnIndex="1"/>
+                                <TextField fx:id="fNameTF" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                                <TextField fx:id="mNameTF" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                                <TextField fx:id="lNameTF" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                                <TextField fx:id="nationalityTF"  GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+                            </children>
+                        </GridPane>
+                    </children>
+                </VBox>
+                <VBox prefHeight="108.0" prefWidth="193.0" spacing="15">
+                    <children>
+                        <Button fx:id="addAuthor" mnemonicParsing="false" text="Add Author" onAction="#handleAddAuthor" />
+                        <Button fx:id="deleteAuthor" mnemonicParsing="false" text="Delete Author" onAction="#handleDeleteAuthor"/>
+                    </children>
+                </VBox>
+            </children>
+            <HBox alignment="BOTTOM_CENTER">
+                <ImageView id="home_nav">
+                    <Image url="@/images/arrow_nav.png"/>
+                </ImageView>
+            </HBox>
+        </HBox>
+    </children>
+</VBox>

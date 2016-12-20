@@ -1,0 +1,23 @@
+.text-field {
+     -fx-border-color: #6D4C41;
+
+}
+.button {
+     -fx-padding: 5 22 5 22;
+     -fx-border-color: #e2e2e2;
+     -fx-border-width: 2;
+     -fx-background-radius: 0;
+     -fx-background-color: #6D4C41;
+     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+     -fx-font-size: 11pt;
+     -fx-text-fill: #d8d8d8;
+     -fx-background-insets: 0 0 0 0, 0, 1, 2;
+ }
+.label{
+     -fx-text-fill: #6D4C41;
+     -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+.check-box {
+     -fx-font-weight: bold;
+     -fx-text-fill: #6D4C41;
+}

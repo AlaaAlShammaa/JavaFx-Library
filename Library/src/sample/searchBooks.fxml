@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.searchBooksController">
+    <children>
+        <Group fx:id="cbGroup">
+            <CheckBox fx:id="cbISBN" layoutX="38.0" layoutY="55.0" mnemonicParsing="false" text="Book's ISBN" />
+            <CheckBox fx:id="cbTitle" layoutX="38.0" layoutY="87.0" mnemonicParsing="false" text="Book's Title" />
+            <CheckBox fx:id="cbID" layoutX="155.0" layoutY="55.0" mnemonicParsing="false" text="Author's ID" />
+            <CheckBox fx:id="cbLastName" layoutX="155.0" layoutY="87.0" mnemonicParsing="false" text="Author's LastName" />
+        </Group>
+        <TextField fx:id="searchField" layoutX="34.0" layoutY="14.0" prefHeight="32.0" prefWidth="440.0" />
+        <Button layoutX="402.0" layoutY="63.0" mnemonicParsing="false" onAction="#handleSearchBTN" prefHeight="32.0" prefWidth="114.0" text="Search" />
+        <TableView fx:id="booksTable" layoutY="139.0" prefHeight="135.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="isbnCol" prefWidth="75.0" text="ISBN" />
+                <TableColumn fx:id="titleCol" prefWidth="75.0" text="TITLE" />
+                <TableColumn fx:id="yearCol" prefWidth="75.0" text="YEAR" />
+                <TableColumn fx:id="publisherCol" prefWidth="123.0" text="PUBLISHER" />
+                <TableColumn fx:id="authorsCol" prefWidth="140.0" text="AUTHORS" />
+            </columns>
+        </TableView>
+        <TableView fx:id="authorsTable" layoutX="1.0" layoutY="300.0" prefHeight="149.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="fNameCol" prefWidth="123.0" text="FIRST NAME" />
+                <TableColumn fx:id="mNameCol" prefWidth="123.0" text="MIDDLE NAME" />
+                <TableColumn fx:id="lNameCol" prefWidth="123.0" text="LAST NAME" />
+                <TableColumn fx:id="nationalityCol" prefWidth="106.0" text="NATIONALITY" />
+            </columns>
+        </TableView>
+        <Label layoutX="9.0" layoutY="116.0" text="Books:" />
+        <Label layoutX="7.0" layoutY="279.0" text="Authors:" />
+      <ImageView fx:id="home_nav" fitHeight="32.0" fitWidth="37.0" layoutX="567.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/arrow_nav.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

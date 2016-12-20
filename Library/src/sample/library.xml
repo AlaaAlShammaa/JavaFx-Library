@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+
+    <author id="1">
+        <firstName>Alaa</firstName>
+        <lastName>Alshammaa</lastName>
+        <nationality>sy</nationality>
+    </author>
+    <author id="2">
+        <firstName>Ryan</firstName>
+        <lastName>Holiday</lastName>
+        <nationality>us</nationality>
+    </author>
+    <book ISBN="242adsf" authors="1">
+        <title>Jour</title>
+    </book>
+    <book ISBN="434dfe" authors="2">
+        <title>Hello</title>
+    </book>
+    <book ISBN="aa4fe" authors="1,2">
+        <title>The Obstacle is the way</title>
+    </book>
+    <book ISBN="lll" authors="1">
+        <title>hello</title>
+        <year>2010</year>
+    </book>
+    <author id="54">
+        <firstName>Al</firstName>
+        <middleName>La</middleName>
+        <lastName>Sh</lastName>
+        <nationality>us</nationality>
+    </author>
+</library>
