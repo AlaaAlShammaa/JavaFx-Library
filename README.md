@@ -10,6 +10,6 @@
 <li>mysqlconnector</li>
 </ul>
 <br>
-<strong>DEMO:</strong>
+#DEMO:
 <br>
 ![](https://cloud.githubusercontent.com/assets/12616013/21385859/e9013b48-c778-11e6-93e5-45b6c8bc39b8.gif)
